@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Murach's Java Servlets and JSP</title>
+    <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+</head>
+<body>
+    <a href="https://dysn-deploy.onrender.com/DySnWeb/">
+        <button class="Btn">
+            <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
+            <div class="text">Home</div>
+        </button>
+    </a><br>
+    <div class="box">
+        <img src="images/murach.png" alt="Logo Murach" width="100px" height="100px" >
+        <h1>Survey</h1>
+        <p>If you have a moment, we'd appreciate it if you would fill out this survey</p>
+        <h1>Your information:</h1>
+        <form action="survey" method="post">
+            <input type="hidden" name="action" value="add">
+            <div class="input-box">
+                <label class="input-label">First Name</label>
+                <input placeholder="Nguyen " class="input" name="firstName" type="text" required>
+                <span class="input-helper">enter a first name</span>
+            </div><br>
+            <div class="input-box">
+                <label class="input-label">Last Name</label>
+                <input placeholder="Duy Son " class="input" name="lastName" type="text" required>
+                <span class="input-helper">enter a last name</span>
+            </div><br>
+            <div class="input-box">
+                <label class="input-label">Email</label>
+                <input placeholder="user@gmail.com" class="input" name="email" type="email" required>
+                <span class="input-helper">enter a valid email</span>
+            </div><br>
+            <div class="input-box">
+                <label class="input-label">Date Of Birth</label>
+                <input placeholder="05/12/2003" class="input" name="dateofbirth" type="text" required>
+                <span class="input-helper">enter a valid Date Of Birth</span>
+            </div><br>
+        <h1>How did you hear about us?</h1>    
+        <p> <input type="radio" name="hearAboutUs" value="Search Engine">Search Engine
+            <input type="radio" name="hearAboutUs" value="Word of Mouth">Word of Mouth 
+            <input type="radio" name="hearAboutUs" value="Social Media">Social Media
+            <input type="radio" name="hearAboutUs" value="Other">Other</p>  
+
+        <h1>Would you like to receive announcements about new CDs and special offers?</h1> 
+            <input type="checkbox" name="notify" value="Yes, I'd like that" > Yes, I'd like that<br>
+            <p><input type="checkbox" name="update" value="Yes, please send me email announcements"> Yes, please send me email announcements</p>
+        <p>Please contact me by:
+            <select name="contact">
+                <option value="Email or posttal mail">Email or Postal mail</option>
+                <option value="Email Only">Email Only</option>
+                <option value="Post mail only">Post mail only</option>
+            </select> <br>
+
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>
+
+
+</form>
